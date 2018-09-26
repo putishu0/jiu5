@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>白酒</title>
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.poshytip.js"></script>
+    <script type='text/javascript' src='js/jq.validate.js'></script>
+    <script>
+        var pixelRatio = 1 / window.devicePixelRatio; //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + '" />');
+        var html = document.getElementsByTagName('html')[0];
+        var pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 10 + "px";
+    </script>
+</head>
+<body>
+    <img src="img/1.jpg" alt="">
+    <section>
+        <div>品牌白酒加盟多少钱？</div>
+        <div>
+            <span>免加盟费+10%进货支持</span>
+            <form action="">
+                <ul>
+                    <li>
+                     <span>姓 名</span>
+                        <input type="text" placeholder="请填写您的真实姓名" name="t2" valType="CHINESE" msg="<font color=red>*</font>中文格式不正确" />
+                    </li>
+                    <li>
+                        <span>手机号码</span>
+                        <input type="text" placeholder="请填写您的手机号码" name="t2" valType="MOBILE" msg="<font color=red>*</font>手机格式不正确" />
+                    </li>
+                    <button class="submit">预约咨询</button>
+                </ul>
+            </form>
+        </div>
+    </section>
+    <img src="img/2.jpg" alt="">
+    <img src="img/3.jpg" alt="">
+    <img src="img/4.jpg" alt="">
+    <img src="img/5.jpg" alt="">
+    <div class="fixed">
+        <pre>长按微信号复制: <span id="clone">  ryc1660  </span> </pre>
+    </div>
+</body>
+</html>
